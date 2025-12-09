@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Timetable</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; padding: 20px; background:#f7f9fb; }
+    h1 { text-align:center; margin-bottom: 10px; }
+    .table-wrap { overflow-x:auto; }
+    table { border-collapse: collapse; width:100%; min-width:900px; background: #fff; }
+    th, td { border: 1px solid #d0d7de; padding:8px 10px; text-align:left; vertical-align: middle; }
+    th { background: #1f8ecd; color: #fff; font-weight:700; }
+    td.empty { background:#f2f6f9; color:#6b6f73; }
+    tr:nth-child(even) td { background: #fbfdff; }
+    .code { font-weight:600; color:#0b4f6c; }
+    .meta { display:block; color:#4b5563; font-size:0.85em; margin-top:4px; }
+    @media (max-width:600px){ th, td{padding:6px 8px; font-size:12px;} }
+  </style>
+</head>
+<body>
+  <h1>Weekly Timetable (Sample)</h1>
+  <p style="text-align:center; color:#333; margin-top:0;">2-2 Time table </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Day / Slot</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Mon</th>
+          <td><span class="code">CS2255</span><span class="meta">Lecture / H-306</span></td>
+          <td><span class="code">CS2255</span><span class="meta">Lab / H-306</span></td>
+          <td><span class="code">CS2202</span><span class="meta">Lab / H-306</span></td>
+          <td><span class="code">CS2202</span><span class="meta">Lecture / H-306</span></td>
+          <td><span class="code">CS2204</span><span class="meta">Lecture / H-102</span></td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+        </tr>
+
+        <tr>
+          <th>Tue</th>
+          <td><span class="code">DSCS02</span><span class="meta">Seminar / H-003</span></td>
+          <td><span class="code">DSCS02</span><span class="meta">Seminar / H-003</span></td>
+          <td><span class="code">CS2204</span><span class="meta">Practical / HC-15A</span></td>
+          <td class="code">CS2204</td>
+          <td><span class="code">MT2012</span><span class="meta">Tutorial / H-101</span></td>
+          <td class="empty">-</td>
+          <td><span class="code">MT2012</span><span class="meta">Prac / H-101</span></td>
+          <td class="empty">-</td>
+        </tr>
+
+        <tr>
+          <th>Wed</th>
+          <td><span class="code">CS3206</span><span class="meta">Lab / H-006</span></td>
+          <td><span class="code">CS3206</span><span class="meta">Lab / H-006</span></td>
+          <td><span class="code">CS2255</span><span class="meta">Lecture / H-004</span></td>
+          <td class="code">CS2255</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+        </tr>
+
+        <tr>
+          <th>Thu</th>
+          <td><span class="code">CS2204</span><span class="meta">Lecture / H-003</span></td>
+          <td><span class="code">CS2204</span><span class="meta">Lecture / H-003</span></td>
+          <td><span class="code">MT2012</span><span class="meta">Lab / H-107</span></td>
+          <td><span class="code">MT2012</span><span class="meta">Lecture / H-107</span></td>
+          <td><span class="code">CS2202</span><span class="meta">Lab / H-103</span></td>
+          <td class="empty">-</td>
+          <td><span class="code">UC0014</span><span class="meta">Seminar / H-101</span></td>
+          <td><span class="code">UC0014</span><span class="meta">Seminar / H-101</span></td>
+        </tr>
+
+        <tr>
+          <th>Fri</th>
+          <td><span class="code">CS2202</span><span class="meta">Prac / HC-15C</span></td>
+          <td><span class="code">CS2202</span><span class="meta">Prac / HC-15C</span></td>
+          <td><span
+            class="code">CS2204</span><span class="meta">Seminar / HC-14C</span></td>
+          <td><span class="code">CS2204</span></td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+        </tr>
+
+        <tr>
+          <th>Sat</th>
+          <td><span class="code">DSCS02</span><span class="meta">Seminar / H-103</span></td>
+          <td><span class="code">DSCS02</span><span class="meta">Seminar / H-103</span></td>
+          <td><span class="code">CS3206</span><span class="meta">Tutorial / H-306</span></td>
+          <td><span class="code">CS3206</span></td>
+          <td><span class="code">DSCS02</span><span class="meta">Lab / H-103</span></td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+          <td class="empty">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="margin-top:12px; font-size:0.95em; color:#444;">Notes: Codes are abbreviated (e.g., <strong>CS2255</strong> for <em>24CS2255F</em>) and room names shortened for readability. Edit this file to adjust times or rooms.</p>
+</body>
+</html>
